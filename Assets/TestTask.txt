@@ -1,0 +1,43 @@
+https://docs.google.com/document/d/1_EjENugGPvC8hGNB0cfQ5aG5-O7RPIOJyKKEQd-QPjc/edit#
+
+Task to create a hypercasual game about ancient Egypt 
+Your task is to come up with and implement a simple game about ancient Egypt, which will be developed in Unity 2021.3.
+The game should include elements related to pyramids, pharaohs, sand, and crystals, but should not be a runner game.
+
+You choose the main mechanics yourself, it is advisable to choose a non-popular mechanics
+
+It is important that the game has the following elements:
+a simple, but understandable tutorial;
+a victory/defeat window (if applicable);
+a pleasant visual;
+controls that would work both in the editor and on mobile devices.
+
+To implement the game, we recommend using the following tools:
+DoTween - a free plugin for creating animations from code;
+Cinemachine - an embedded Unity tool for convenient camera settings and behaviors;
+Unity Recorder - an embedded Unity tool for recording video;
+Text Mesh Pro - a replacement for standard text in Unity with many advantages;
+Mixamo - a free tool from Adobe for quick work with humanoid animations.
+
+Additional wishes:
+the UI Canvas should be in Screen Space and adapt to different resolutions (from 5:3 to 18:9);
+values should be configurable in the inspector (or in Scriptable Objects);
+there should be a clear hierarchy of objects on the scene;
+prefabs and prefab variants should be used;
+there is no need to refine and polish animations from Mixamo - it is enough to find the most suitable ones.
+
+It is very important to make a prototype that is enjoyable to play. To do this, it is necessary to pay attention to the
+following elements:
+
+optimization (if there is no good FPS, then the game will simply be unpleasant to play, even if it is perfect in terms of gameplay);
+camera (it is necessary to create a smooth and convenient camera that will allow the player to easily observe
+everything that is happening).
+
+Recommended to spend no more than 2 days
+
+
+Upload the result to GIT and send the link to the repository to the email t4h.unity@gmail.com.
+
+
+
+Fall object from sky and pick them before they disappear for some time
