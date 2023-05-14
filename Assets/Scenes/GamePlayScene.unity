@@ -568,7 +568,7 @@ GameObject:
   - component: {fileID: 62220035}
   m_Layer: 5
   m_Name: RecordingPanel
-  m_TagString: Untagged
+  m_TagString: EditorOnly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1466,15 +1466,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f8737a8b635b7ab418f01f6deab54fd5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -72.22058
+      value: -78.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f8737a8b635b7ab418f01f6deab54fd5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.494949
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f8737a8b635b7ab418f01f6deab54fd5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 65.757416
+      value: 70.7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: f8737a8b635b7ab418f01f6deab54fd5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1778,16 +1778,28 @@ PrefabInstance:
       value: 60
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c8c4e437dacf35943929c5d9e137abae, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.2890258
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: c8c4e437dacf35943929c5d9e137abae, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.2890258
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: c8c4e437dacf35943929c5d9e137abae, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.2890258
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: c8c4e437dacf35943929c5d9e137abae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -32.58
+      value: -32.733
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c8c4e437dacf35943929c5d9e137abae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.77
+      value: 7.126
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c8c4e437dacf35943929c5d9e137abae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 47.34
+      value: 47.595
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: c8c4e437dacf35943929c5d9e137abae, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8142,7 +8154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6c45b6cf92d0a614a9ff803ca6454a56, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.019684
+      value: 5.03
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 6c45b6cf92d0a614a9ff803ca6454a56, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10512,7 +10524,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2d113b0b170b5264fbb9d0eeceda333b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 15.8
+      value: 14.68
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 2d113b0b170b5264fbb9d0eeceda333b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14972,6 +14984,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1321347934}
     m_Modifications:
+    - target: {fileID: 3072898410705289024, guid: 476631c2b2a024bfaa9101a4b3b00686, type: 3}
+      propertyPath: joystickRange
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3072898410705289024, guid: 476631c2b2a024bfaa9101a4b3b00686, type: 3}
+      propertyPath: magnitudeMultiplier
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3072898410705289024, guid: 476631c2b2a024bfaa9101a4b3b00686, type: 3}
       propertyPath: joystickOutputEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

@@ -23,6 +23,16 @@ public class UIVirtualJoystick : MonoBehaviour, IPointerDownHandler, IDragHandle
     void Start()
     {
         SetupHandle();
+
+#if UNITY_ANDROID || UNITY_IOS
+    magnitudeMultiplier=80;
+#endif
+
+#if UNITY_EDITOR || UNITY_STANDALONE
+    magnitudeMultiplier=1;
+#endif
+
+
     }
 
     private void SetupHandle()

@@ -29,6 +29,7 @@ public class GameManager : MonoBehaviour
     public GameObject[] NextLevelButton;
     public ThirdPersonController thirdPersonController;
     public GameObject HUD;
+    float BottomValue = -600;
     private void Awake()
     { 
         Instance = this;
@@ -68,7 +69,7 @@ public class GameManager : MonoBehaviour
         if (Collection >= LevelConfigurations[CurrentLevel].CollectionTarget)
         {
             ManageLevelButtons();
-            HUD.transform.DOMoveY(-400, 0.5f);
+            HUD.transform.DOMoveY(BottomValue, 0.5f);
             LevelCompletedScreen.SetActive(true);
             thirdPersonController.enabled = false;
             thirdPersonController._animator.enabled = false;
@@ -126,9 +127,10 @@ public class GameManager : MonoBehaviour
         }
         else
         {
+            TimerText.text = "Timer : 0";
             thirdPersonController.enabled = false;
             thirdPersonController._animator.enabled = false;
-            HUD.transform.DOMoveY(-400, 0.5f);
+            HUD.transform.DOMoveY(BottomValue, 0.5f);
             CheckLevelStatus();
         }
         
