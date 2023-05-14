@@ -36,7 +36,7 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        StartLevel(0);
+        //StartLevel(0);
     }
 
   
