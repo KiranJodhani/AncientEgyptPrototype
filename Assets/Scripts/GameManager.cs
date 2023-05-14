@@ -71,7 +71,7 @@ public class GameManager : MonoBehaviour
         if (Collection >= LevelConfigurations[CurrentLevel].CollectionTarget)
         {
             ManageLevelButtons();
-            HUD.SetActive(false);
+            HUD.transform.DOMoveY(-400, 0.5f);
             LevelCompletedScreen.SetActive(true);
             thirdPersonController.enabled = false;
             thirdPersonController._animator.enabled = false;
@@ -102,7 +102,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(SpawnInitialCrystals());
 
         LevelCompletedScreen.SetActive(false);
-        HUD.SetActive(true);
+        HUD.transform.DOMoveY(0, 0.5f);
         LevelFailedScreen.SetActive(false);
 
         thirdPersonController.enabled = true;
@@ -131,7 +131,7 @@ public class GameManager : MonoBehaviour
         {
             thirdPersonController.enabled = false;
             thirdPersonController._animator.enabled = false;
-            HUD.SetActive(false);
+            HUD.transform.DOMoveY(-400, 0.5f);
             CheckLevelStatus();
         }
         
