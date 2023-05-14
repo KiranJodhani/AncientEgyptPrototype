@@ -27,8 +27,7 @@ public class VideoRecording : MonoBehaviour
 
     void Awake()
     {
-        Initialize();
-        
+        //Initialize(); 
     }
 
     internal void Initialize()
@@ -49,8 +48,8 @@ public class VideoRecording : MonoBehaviour
 
         m_Settings.ImageInputSettings = new GameViewInputSettings
         {
-            OutputWidth = Screen.width,
-            OutputHeight = Screen.height
+            OutputWidth = 1920,
+            OutputHeight = 1080
         };
 
         m_Settings.AudioInputSettings.PreserveAudio = m_RecordAudio;
@@ -61,12 +60,13 @@ public class VideoRecording : MonoBehaviour
         // Setup Recording
         controllerSettings.AddRecorderSettings(m_Settings);
         controllerSettings.SetRecordModeToManual();
-        controllerSettings.FrameRate = 60.0f;
+        controllerSettings.FrameRate = 30;
 
         RecorderOptions.VerboseMode = false;
         m_RecorderController.PrepareRecording();
-
-        
+        m_RecorderController.StartRecording();
+        Debug.Log($"Started recording for file {OutputFile.FullName}");
+        RecordingText.text = "Stop Recording";
     }
 
     public void ToggleRecording()
@@ -78,10 +78,14 @@ public class VideoRecording : MonoBehaviour
         }
         else
         {
-            m_RecorderController.StartRecording();
-            Debug.Log($"Started recording for file {OutputFile.FullName}");
-            RecordingText.text = "Stop Recording";
+            InitAndStartRecording();
+            
         }
+    }
+
+    void InitAndStartRecording()
+    {
+        Initialize();
     }
    
 }

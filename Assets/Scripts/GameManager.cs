@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Zenject;
-using UnityEngine.UI;
 using TMPro;
 using StarterAssets;
 using DG.Tweening;
@@ -31,15 +30,13 @@ public class GameManager : MonoBehaviour
     public ThirdPersonController thirdPersonController;
     public GameObject HUD;
     private void Awake()
-    {
-        
+    { 
         Instance = this;
     }
 
     void Start()
     {
         StartLevel(0);
-        
     }
 
   
